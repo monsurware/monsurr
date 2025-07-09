@@ -1,37 +1,32 @@
-import tkinter as tk
-import random
+# name = input("enter your name")
+# print(f"hello, {name}")
 
-# Create main window
-window = tk.Tk()
-window.title("Rock, Paper, Scissors")
-window.geometry("300x300")
 
-# Choices
-choices = ["Rock", "Paper", "Scissors"]
+# age_str = input("enter your age: ")
+# age_int = int(age_str)
+# print(f"you will be {age_int + 1} next year,")
 
-# Result label
-result_label = tk.Label(window, text="", font=("Helvetica", 14))
-result_label.pack(pady=20)
+# with open("data.txt", "r") as file:
+#     content = file.read()
+#     print (content)
 
-# Game logic
-def play(user_choice):
-    computer_choice = random.choice(choices)
-    
-    if user_choice == computer_choice:
-        result = "It's a draw!"
-    elif (user_choice == "Rock" and computer_choice == "Scissors") or \
-         (user_choice == "Paper" and computer_choice == "Rock") or \
-         (user_choice == "Scissors" and computer_choice == "Paper"):
-        result = f"You Win! Computer chose {computer_choice}"
-    else:
-        result = f"You Lose! Computer chose {computer_choice}"
-    
-    result_label.config(text=result)
+# print("This is a message")
+# x = 10
 
-# Buttons
-tk.Button(window, text="Rock", width=15, command=lambda: play("Rock")).pack(pady=5)
-tk.Button(window, text="Paper", width=15, command=lambda: play("Paper")).pack(pady=5)
-tk.Button(window, text="Scissors", width=15, command=lambda: play("Scissors")).pack(pady=5)
+# print(f"The value of x is: {x}")
 
-# Run the GUI
-window.mainloop()
+# age = 19
+# if age >= 18:
+#   print("you are eligible to vote")
+# else:
+
+#   print("you are not eligible to vote")
+
+# score = 12
+# if score >= 90:
+#     print("Grade A")
+# elif score >= 80:
+#     print("Grade B")
+# else:
+#     print("Grade C or Lower")
+
